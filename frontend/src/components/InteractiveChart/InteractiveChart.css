@@ -1,0 +1,43 @@
+.interactive-chart {
+  background: var(--bg-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.interactive-chart__title {
+  font-size: var(--font-size-lg);
+  color: var(--text-dark);
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.interactive-chart__tooltip {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-sm);
+  box-shadow: var(--shadow-md);
+}
+
+.interactive-chart__tooltip-label {
+  font-size: var(--font-size-sm);
+  color: var(--text-light);
+  margin: 0 0 4px 0;
+  font-weight: 500;
+}
+
+.interactive-chart__tooltip-value {
+  font-size: var(--font-size-lg);
+  color: var(--primary-blue);
+  margin: 0;
+  font-weight: 700;
+}
+
+.interactive-chart__hint {
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--text-light);
+  margin-top: var(--spacing-sm);
+  font-style: italic;
+}

@@ -1,0 +1,24 @@
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.5.3
+pydantic-settings==2.1.0
+python-dotenv==1.0.0
+requests==2.31.0
+pandas==2.1.4
+numpy==1.26.3
+python-multipart==0.0.6
+httpx==0.26.0
+
+# Optional: Database support (if needed later)
+# sqlalchemy==2.0.25
+# asyncpg==0.29.0
+
+# Optional: Redis caching
+# redis==5.0.1
+# hiredis==2.3.2
+
+# Date/Time
+python-dateutil==2.8.2
+
+# CORS
+fastapi-cors==0.0.6

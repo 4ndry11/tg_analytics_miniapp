@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: analytics-miniapp-api
+    env: python
+    region: frankfurt
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: BITRIX24_DOMAIN
+        sync: false
+      - key: BITRIX24_USER_ID
+        sync: false
+      - key: BITRIX24_TOKEN_LEADS
+        sync: false
+      - key: BITRIX24_TOKEN_USERS
+        sync: false
+      - key: BITRIX24_TOKEN_STATUS
+        sync: false
+      - key: BITRIX24_TOKEN_DEALS
+        sync: false
+      - key: FINMAP_API_KEY
+        sync: false
+      - key: FINMAP_COMPANY_ID
+        sync: false
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: API_CORS_ORIGINS
+        value: '["https://your-miniapp-domain.onrender.com"]'
+      - key: ENVIRONMENT
+        value: production

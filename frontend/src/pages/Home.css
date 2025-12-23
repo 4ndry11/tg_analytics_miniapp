@@ -1,0 +1,104 @@
+.home {
+  padding: var(--spacing-md);
+  max-width: 100%;
+}
+
+.home__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.home__header h1 {
+  font-size: var(--font-size-xxl);
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.home__date-picker {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  color: var(--text-dark);
+  background: var(--bg-white);
+  cursor: pointer;
+}
+
+.home__kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.home__department {
+  margin-bottom: var(--spacing-lg);
+}
+
+.home__department h2 {
+  font-size: var(--font-size-lg);
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.home__department-time {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  text-align: center;
+  margin: var(--spacing-md) 0;
+}
+
+.home__department-subtitle {
+  text-align: center;
+  color: var(--text-light);
+  font-size: var(--font-size-sm);
+}
+
+.home__finmap {
+  margin-bottom: var(--spacing-lg);
+}
+
+.home__finmap h3 {
+  font-size: var(--font-size-lg);
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-sm);
+}
+
+.home__finmap-amount {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--success);
+  margin: var(--spacing-sm) 0;
+}
+
+.home__finmap-count {
+  font-size: var(--font-size-sm);
+  color: var(--text-light);
+}
+
+.home__actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.home__action-btn {
+  background: var(--primary-blue);
+  color: white;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.home__action-btn:hover {
+  background: var(--accent-blue);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
