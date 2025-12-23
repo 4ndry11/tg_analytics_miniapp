@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useQuery } from '@tantml:query';
+import { useQuery } from '@tanstack/react-query';
 import { format, subDays } from 'date-fns';
 import { metricsApi } from '../services/api';
 import './ManagerDetail.css';

@@ -78,7 +78,7 @@ export const InteractiveChart: React.FC<InteractiveChartProps> = ({
             cursor="pointer"
             radius={[8, 8, 0, 0]}
           >
-            {data.map((entry, index) => (
+            {data.map((_entry, index) => (
               <Cell
                 key={`cell-${index}`}
                 fill={activeIndex === index ? '#2196F3' : color}
